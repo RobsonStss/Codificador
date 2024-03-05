@@ -1,0 +1,18 @@
+#conteudo {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+#conteudo__entrada__texto {
+    padding: 240px;
+}
+
+#conteudo__saida__texto {
+    padding: 320px 60px;
+}
+
+#conteudo__saida__texto {
+    background-image: url(../assets/Illustration\ Robot\ Instagram\ Highlights\ Blue.png);
+}
