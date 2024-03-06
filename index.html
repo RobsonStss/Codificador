@@ -12,15 +12,15 @@
     </header>
     <main id="conteudo">
         <section id="conteudo__entrada">
-            <input type="text" id="conteudo__entrada__texto" value="Digite seu texto">
+            <input type="text" id="conteudo__entrada__texto" placeholder="Digite seu texto">
             <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação">Apenas letras minúsculas e sem acento.</p>
             <div>
-                <button type="button" onclick="mostrarTexto()" id="conteudo__botao">Criptografar</button>
-                <button type="button" onclick="mostrarTexto()" id="conteudo__botao">Descriptografar</button>
+                <button type="button" onclick="mostrarTexto(desaparecerImagem())" id="conteudo__botao">Criptografar</button>
+                <button type="button" onclick="mostrarTexto(desaparecerImagem())" id="conteudo__botao">Descriptografar</button>
             </div>
         </section>
         <section id="conteudo__saida">
-            <input type="text" id="conteudo__saida__texto">
+            <input type="text" id="conteudo__saida__texto" placeholder="Nenhum texto encontrado">
         </section>
     </main>
     <footer>
