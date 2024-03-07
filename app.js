@@ -1,13 +1,10 @@
-const texto = [];
-const chaves = [e="nter", i="mes", a="i", o="ber", u="fat"];
-var mensagemCompleta = []
-var mensagem = "";
+var lista = [];
+// const chaves = [e="nter", i="mes", a="i", o="ber", u="fat"];
+var mensagem;
 
-
-function mostrarTexto() {
+function pegarTexto() {
     mensagem = document.getElementById('conteudo__entrada__texto').value;
-    texto.push(mensagem);
-    document.getElementById('conteudo__saida__texto').value = texto;
+    lista.push(mensagem);
 }
 
 function desaparecerImagem() {
@@ -15,17 +12,28 @@ function desaparecerImagem() {
 }
 
 function criptografar() {
-    if (mensagem.includes("a")) {
-        const adicionar = [mensagem + "i"];
-        mensagem.push(adicionar);
-        console.log(adicionar[0]);
+    if (mensagem.includes('a')) {
+        lista.push("i");
+    }
+    if (mensagem.includes('e')) {
+        lista.push("nter");
     }
 }
 
-console.log(mensagemCompleta);
+function embaralharTexto() {
+    let a = lista.length *  Math.random(lista);
+    console.log(lista);
+}
+
+function mostrarTexto() {
+    document.getElementById('conteudo__saida__texto').value = lista;
+}
 
 function comportamento() {
+    pegarTexto();
+    criptografar();
     mostrarTexto();
     desaparecerImagem();
-    criptografar();
+    embaralharTexto();
 }
+
