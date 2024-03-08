@@ -1,4 +1,3 @@
-// chaves = [e="nter", i="mes", a="i", o="ber", u="fat"];
 var textoEntrada = document.querySelector("#conteudo__entrada__texto");
 var resultadoCriptgrafado;
 var resultadoDescrip;
@@ -25,14 +24,21 @@ function mostrarTextoDescrip() {
     document.getElementById("conteudo__saida__texto").value = resultadoDescrip;
 }
 
-function botaoCrip() {
+function botaoCriptografar() {
     criptografar();
     desaparecerImagem();
     mostrarTextoCrip();
 }
 
-function botaoDescrip() {
+function botaoDescriptografar() {
     descriptografar();
     mostrarTextoDescrip();
     desaparecerImagem();
+}
+
+function copiarTexto() {
+    var copiarTexto = document.getElementById("conteudo__saida__texto");
+    copiarTexto.select();
+    navigator.clipboard.writeText(copiarTexto.value);
+    alert(`Texto copiado ${copiarTexto.value}`);
 }

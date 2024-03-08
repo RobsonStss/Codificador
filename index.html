@@ -15,13 +15,14 @@
             <input type="text" id="conteudo__entrada__texto" placeholder="Digite seu texto">
             <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação">Apenas letras minúsculas e sem acento.</p>
             <div>
-                <button type="button" onclick="botaoCrip()" id="conteudo__botao">Criptografar</button>
-                <button type="button" onclick="botaoDescrip()" id="conteudo__botao">Descriptografar</button>
+                <button type="button" onclick="botaoCriptografar()" id="conteudo__botao">Criptografar</button>
+                <button type="button" onclick="botaoDescriptografar()" id="conteudo__botao">Descriptografar</button>
             </div>
         </section>
-        <section id="conteudo__saida">
+        <div>
             <input type="text" id="conteudo__saida__texto" placeholder="Nenhum texto encontrado">
-        </section>
+            <button id="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+        </div>
     </main>
     <footer>
         <p>Desenvolvido por Robson</p>
