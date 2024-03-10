@@ -7,26 +7,22 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-
-    </header>
-    <main id="conteudo">
-        <section id="conteudo__entrada">
-            <input type="text" id="conteudo__entrada__texto" placeholder="Digite seu texto">
+    <main id="main">
+        <section id="main__entrada">
+            <input type="text" id="main__entrada__texto" placeholder="Digite seu texto">
             <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação">Apenas letras minúsculas e sem acento.</p>
             <div>
-                <button type="button" onclick="botaoCriptografar()" id="conteudo__botao">Criptografar</button>
-                <button type="button" onclick="botaoDescriptografar()" id="conteudo__botao">Descriptografar</button>
+                <button type="button" onclick="criptografar()" id="main__entrada__botao">Criptografar</button>
+                <button type="button" onclick="descriptografar()" id="main__entrada__botao">Descriptografar</button>
             </div>
         </section>
-        <div>
-            <input type="text" id="conteudo__saida__texto" placeholder="Nenhum texto encontrado">
-            <button id="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+        <div id="main__saida">
+                <textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado"></textarea>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Robson</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="appp.js"></script>
 </body>
 </html>
