@@ -9,6 +9,8 @@ function criptografar() {
 
 
     document.getElementById('main__saida').innerHTML = '<textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado">' + resultadoCriptografado +'</textarea>' + '<button class="botao-copiar" id="copiar" onclick="copiar()">Copiar</button>';
+
+    document.getElementById("main__saida__texto").style.backgroundImage = "none";
 }
 
 function descriptografar() {
@@ -16,6 +18,8 @@ function descriptografar() {
     resultadoDescriptografado = texto.replace(/ai/g, "a").replace(/enter/g, "e").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
 
     document.getElementById('main__saida').innerHTML = '<textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado">' + resultadoDescriptografado +'</textarea>' + '<button class="botao-copiar" id="copiar" onclick="copiar()">Copiar</button>';
+
+    document.getElementById("main__saida__texto").style.backgroundImage = "none";
 }
 
 function copiar() {
