@@ -9,20 +9,20 @@
 <body>
     <main id="main">
         <section id="main__entrada">
-            <input type="text" id="main__entrada__texto" placeholder="Digite seu texto">
-            <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação">Apenas letras minúsculas e sem acento.</p>
-            <div>
-                <button type="button" onclick="criptografar()" id="main__entrada__botao">Criptografar</button>
-                <button type="button" onclick="descriptografar()" id="main__entrada__botao">Descriptografar</button>
+            <input type="text" id="main__entrada__texto" value="Digite seu texto">
+            <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação"> Apenas letras minúsculas e sem acento.</p>
+            <div id="main__entrada__botoes">
+                <button type="button" onclick="criptografar()"  id="main__entrada__botoes__criptografar">Criptografar</button>
+                <button type="button" onclick="descriptografar()" id="main__entrada__botoes__descriptografar">Descriptografar</button>
             </div>
         </section>
         <div id="main__saida">
-                <textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado"></textarea>
+            <textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado"></textarea>
         </div>
     </main>
-    <footer>
+    <footer id="rodape">
         <p>Desenvolvido por Robson</p>
     </footer>
-    <script src="appp.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

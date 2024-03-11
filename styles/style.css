@@ -1,26 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --corBotao: #255957;
+    --corBorda: #7AE7C7;
+    --corFundo: #437C90;
+}
+
+body {
+    background-color: var(--corFundo);
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #main {
-    background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 75px;
-    padding: 155px 12px;
+    padding: 40px;
 }
 
 #main__entrada {
     padding: 2px 68px;
     align-items: center;
+    outline: 0;
 }
 
 #main__entrada__texto {
-    padding: 140px ;
-    
+    outline: none;
+    border: none;
+    padding: 280px ;
+    background-color: var(--corFundo);
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 12px;
+ }
+
+p {
+    align-items: center;
+    font-size: 12px;
+    padding: 16px;
+    gap: 16px;
+}
+
+#main__entrada__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+#main__entrada__botoes__criptografar {
+    font-size: 16px;
+    padding: 24px;
+    width: 280px;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--corBotao);
+    border-color: var(--corBotao);
+}
+
+#main__entrada__botoes__descriptografar {
+    font-size: 16px;
+    padding: 24px;
+    width: 280px;
+    border-radius: 24px;
+    background-color: var(--corFundo);
+    border: solid;
+    border-color: var(--corBorda);
+    border-width: 2px;
 }
 
 #main__saida {
@@ -32,12 +89,35 @@
 
 
 #main__saida__texto  {
-    padding: 305px 60px;
+    padding: 285px 60px;
+    background-image: url(/assets/Illustration\ Robot\ Instagram\ Highlights\ Blue.png);
+    border-radius: 32px;
+    resize: none;
+    background-color: white;
+    border: none;
+    outline: none;
 }
 
 
 .botao-copiar{
     position: absolute;
-    bottom: 70px;
-    right: 610px;
+    bottom: 250px;
+    right: 175px;
+
+    font-size: 16px;
+    padding: 24px;
+    width: 250px;
+    border-radius: 24px;
+    background-color:;
+    border: solid;
+    border-color: var(--corBorda);
+    border-width: 2px;
+}
+
+#rodape {
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 23.64px;
 }
