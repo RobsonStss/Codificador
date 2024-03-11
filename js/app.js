@@ -5,7 +5,7 @@ var resultadoDescriptografado;
 
 function criptografar() {
     var texto = textoInput.value;
-    resultadoCriptgrafado = texto.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
+    resultadoCriptgrafado = texto.replace("e", "enter").replace("i", "imes").replace("a", "ai").replace("o", "ober").replace("u", "ufat");
 
 
     document.getElementById('main__saida').innerHTML = '<textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado">' + resultadoCriptgrafado +'</textarea>' + '<button class="botao-copiar" id="copiar" onclick="copiar()">Copiar</button>';
@@ -15,7 +15,7 @@ function criptografar() {
 
 function descriptografar() {
     var texto = textoInput.value;
-    resultadoDescriptografado = texto.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u");
+    resultadoDescriptografado = texto.replace("enter", "e").replace("imes", "i").replace("ai", "a").replace("ober", "o").replace("ufat", "u");
 
     document.getElementById('main__saida').innerHTML = '<textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado">' + resultadoDescriptografado +'</textarea>' + '<button class="botao-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 
