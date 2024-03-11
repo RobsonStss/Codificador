@@ -9,15 +9,16 @@
 <body>
     <main id="main">
         <section id="main__entrada">
-            <input type="text" id="main__entrada__texto" value="Digite seu texto">
-            <p><img src="assets/bi_exclamation-circle-fill.png" alt="incone de exclamação"> Apenas letras minúsculas e sem acento.</p>
+            <textarea name="name" id="main__entrada__texto" cols="30" rows="5" placeholder="Digite seu texto" autocomplete="on"></textarea>
+            <p><img src="/assets/exclamacao.png" alt="incone de exclamação"> Apenas letras minúsculas e sem acento.</p>
             <div id="main__entrada__botoes">
                 <button type="button" onclick="criptografar()"  id="main__entrada__botoes__criptografar">Criptografar</button>
                 <button type="button" onclick="descriptografar()" id="main__entrada__botoes__descriptografar">Descriptografar</button>
             </div>
         </section>
         <div id="main__saida">
-            <textarea name="name" id="main__saida__texto" placeholder="Nenhum texto encontrado"></textarea>
+            <textarea name="name" id="main__saida__texto"></textarea>
+            <img id="main__saida__imagem" src="/assets/resultado-bg.png" alt="imagem de um robo">
         </div>
     </main>
     <footer id="rodape">

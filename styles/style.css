@@ -6,9 +6,10 @@
 }
 
 :root {
-    --corBotao: #255957;
-    --corBorda: #7AE7C7;
-    --corFundo: #437C90;
+    --corBotao: #264653;
+    --corBorda: #e9c46a;
+    --corFundo: #2a9d8f;
+    --corFonte: #EEEEEE;
 }
 
 body {
@@ -17,32 +18,39 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: var(--corFonte);
 }
 
 #main {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     gap: 75px;
-    padding: 40px;
+    padding: 70px;
 }
 
 #main__entrada {
     padding: 2px 68px;
     align-items: center;
     outline: 0;
+    justify-content: center;
 }
+
 
 #main__entrada__texto {
     outline: none;
     border: none;
-    padding: 280px ;
-    background-color: var(--corFundo);
+    padding: 250px ;
+    background-color: transparent;
+    color: black;
+    resize: none;
 }
 
 ::-webkit-input-placeholder {
-    color: white;
-    font-size: 12px;
+    color: black;
+    font-size: 18px;
+    background-position: top;
+    position: absolute;
  }
 
 p {
@@ -65,6 +73,7 @@ p {
     width: 280px;
     border-radius: 24px;
     border: none;
+    color: var(--corFonte);
     background-color: var(--corBotao);
     border-color: var(--corBotao);
 }
@@ -78,6 +87,19 @@ p {
     border: solid;
     border-color: var(--corBorda);
     border-width: 2px;
+    color: var(--corFonte);
+}
+
+#main__entrada__botoes__criptografar:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+#main__entrada__botoes__descriptografar:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 80%;
 }
 
 #main__saida {
@@ -90,34 +112,45 @@ p {
 
 #main__saida__texto  {
     padding: 285px 60px;
-    background-image: url(/assets/Illustration\ Robot\ Instagram\ Highlights\ Blue.png);
     border-radius: 32px;
     resize: none;
     background-color: white;
     border: none;
     outline: none;
+    color: black;
+    background-color: #FCEFF9;
+    align-items: center;
+}
+
+#main__saida__imagem {
+    position: absolute;
+    bottom: 360px;
+    right: 158px;
+    width: 210px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 
 .botao-copiar{
     position: absolute;
     bottom: 250px;
-    right: 175px;
+    right: 136px;
 
     font-size: 16px;
     padding: 24px;
     width: 250px;
     border-radius: 24px;
-    background-color:;
-    border: solid;
-    border-color: var(--corBorda);
+    border: none;
     border-width: 2px;
+    background-color: var(--corBotao);
+    color: var(--corFonte);
 }
 
 #rodape {
-    color: white;
-    background-color: red;
+    color: var(--corFonte);
+    background-color: var(--corBotao);
     font-size: 1.5rem;
     text-align: center;
-    padding: 23.64px;
+    padding: 9px;
 }
