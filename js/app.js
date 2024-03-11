@@ -1,5 +1,5 @@
-const textoInput = document.querySelector('#main__entrada__texto');
-const textOutput = document.querySelector('#main__saida__texto');
+var textoInput = document.querySelector('#main__entrada__texto');
+var textOutput = document.querySelector('#main__saida__texto');
 var resultadoCriptgrafado;
 var resultadoDescriptografado;
 
