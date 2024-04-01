@@ -36,6 +36,10 @@ body {
     justify-content: center;
 }
 
+#main__entrada__texto::placeholder {
+    color: black;
+    font-size: 24px;
+}
 
 #main__entrada__texto {
     outline: none;
@@ -46,14 +50,9 @@ body {
     resize: none;
 }
 
-::-webkit-input-placeholder {
-    color: black;
-    font-size: 18px;
-    background-position: top;
-    position: absolute;
- }
 
 p {
+    font-family: "Roboto", sans-serif;
     align-items: center;
     font-size: 12px;
     padding: 16px;
@@ -102,49 +101,68 @@ p {
     opacity: 80%;
 }
 
+
+
 #main__saida {
-    width: 100%;
-    height: 200px; /* Ajuste conforme necessário */
-    resize: none; /* Para evitar redimensionamento */
+    background-color: white;
+    border-radius: 32px;
+    text-align: center;
+
+
 }
 
+#main__saida__tela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#main__saida__container {
+    display: block;
+    padding: 150px 0px;
+}
 
 #main__saida__texto  {
-    padding: 285px 60px;
+    padding: 250px 90px;
     border-radius: 32px;
     resize: none;
     background-color: white;
     border: none;
     outline: none;
     color: black;
-    background-color: #FCEFF9;
+    background-color: white;
     align-items: center;
+    display: none;
+}
+
+#main__saida__copiar {
+    width: 280px;
+    height: 50px;
+    border-radius: 24px;
+    border: solid;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    border-color: var(--corBorda);
+    background-color: var(--corBotao);
+    border-width: 2px;
+    display:  none;
 }
 
 #main__saida__imagem {
-    position: absolute;
-    bottom: 360px;
-    right: 158px;
-    width: 210px;
-    height: 300px;
-    border-radius: 20px;
+    height: 240px;
 }
 
+h1 {
+    color: black;
+}
 
-.botao-copiar{
-    position: absolute;
-    bottom: 250px;
-    right: 136px;
+#main__saida__paragrafo {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 14px;
 
-    font-size: 16px;
-    padding: 24px;
-    width: 250px;
-    border-radius: 24px;
-    border: none;
-    border-width: 2px;
-    background-color: var(--corBotao);
-    color: var(--corFonte);
+
 }
 
 #rodape {
