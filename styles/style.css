@@ -44,7 +44,7 @@ body {
     outline: 0;
     background-color: var(--corbloco);
     border-radius: 1.5rem;
-    backdrop-filter: blur(0.31rem);
+    backdrop-filter: blur(0.61rem);
     border-color: var(--corBorda);
     height: 37.5rem;
     border: solid;
