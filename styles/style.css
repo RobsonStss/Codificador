@@ -14,23 +14,26 @@
 }
 
 body {
-    background-image: url(../assets/anonimous.jpg);
+    display: flex;
+    flex-direction: column;
     height: auto;
-    font-size: 16px;
+    font-size: 1rem;    
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: var(--corFonte);
-    background-color: blue;
+    background-color: black;
+    background-image: url(../assets/anonimous.jpg);
+
 }
 
 #main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
+    gap: 40px;
     padding: 80px 40px;
-
+    margin: auto;
 }
 
 #main__entrada {
@@ -81,7 +84,7 @@ p {
 #main__entrada__botoes__criptografar {
     font-size: 16px;
     padding: 24px;
-    width: 280px;
+    width: 250px;
     border-radius: 24px;
     border: solid;
     color: var(--corFonte);
@@ -113,8 +116,6 @@ p {
     transform: scale(1.1);
     opacity: 80%;
 }
-
-
 
 #main__saida {
     background-color: var(--corbloco);
@@ -154,8 +155,7 @@ p {
 }
 
 #main__saida__copiar {
-    width: 280px;
-    height: 50px;
+    padding: 6% 30%;
     border-radius: 24px;
     border: solid;
     color: var(--corFonte);
@@ -165,6 +165,7 @@ p {
     background-color: var(--corBotao);
     border-width: 2px;
     display:  none;
+    text-align: center;
 }
 
 #main__saida__imagem {
@@ -189,4 +190,75 @@ h1 {
     font-size: 1.5rem;
     text-align: center;
     padding: 1px;
+}
+
+@media screen and (max-width: 728px){
+    body {
+        background-color: black;
+        background-image: none;
+    }
+    #main {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #main__entrada {
+        width: 100%;
+        height: 10%;
+        border: none;
+        
+    }
+
+    #main__entrada__texto {
+        padding: 50px;
+        width: 100%;
+        height: 30vh;
+        border: solid;
+        border-color: var(--corBorda);
+        border-radius: 24px;
+        border-width: 1px;
+    }
+
+    #main__entrada__botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main__entrada__botoes__criptografar {
+        width: auto;
+        padding: 10% 30px;
+    }
+
+    #main__entrada__botoes__descriptografar {
+        width: auto;
+        padding: 10% 30px;
+        font-size: auto;
+    }
+
+    #main__saida {
+        width: 100%;
+        height: auto;
+    }
+
+    #main__saida__container {
+        width: auto;
+    }
+
+    #main__saida__tela {
+        height: 30vh;
+    }
+
+    #main__saida__texto {   
+        width: 100%;
+        align-items: center;
+        padding: 60px 40px;
+        height: auto;
+    }
+
+    #main__saida__copiar {
+        padding: 5% 20%;
+    }
 }
