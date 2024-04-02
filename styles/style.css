@@ -31,8 +31,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 40px;
-    padding: 80px 40px;
+    gap: 2.5rem;
+    padding: 5rem 2.5rem;
     margin: auto;
 }
 
@@ -41,10 +41,10 @@ body {
     outline: 0;
     justify-content: center;
     background-color: var(--corbloco);
-    border-radius: 24px;
-    backdrop-filter: blur(5px);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(0.31rem);
     border-color: white;
-    height: 600px;
+    height: 37.5rem;
     border: solid;
     border-width: 1px;
 }
@@ -52,13 +52,13 @@ body {
 
 #main__entrada__texto::placeholder {
     color: var(--corFonte);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #main__entrada__texto {
     outline: none;
     border: none;
-    padding: 210px;
+    padding: 13.13rem;
     background-color: var(--corbloco);
     color: var(--corFonte);
     resize: none;
@@ -69,23 +69,23 @@ body {
 p {
     font-family: "Roboto", sans-serif;
     align-items: center;
-    font-size: 12px;
-    padding: 16px;
-    gap: 16px;
+    font-size: 0.75rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 #main__entrada__botoes {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 #main__entrada__botoes__criptografar {
-    font-size: 16px;
-    padding: 24px;
-    width: 250px;
-    border-radius: 24px;
+    font-size: 1rem;
+    padding: 1.5rem;
+    width: 15.63rem;
+    border-radius: 1.5rem;
     border: solid;
     color: var(--corFonte);
     background-color: var(--corBotao);
@@ -93,14 +93,14 @@ p {
 }
 
 #main__entrada__botoes__descriptografar {
-    font-size: 16px;
-    padding: 24px;
-    width: 250px;
-    border-radius: 24px;
+    font-size: 1rem;
+    padding: 1.5rem;
+    width: 15.63rem;
+    border-radius: 1.5rem;
     background-color: var(--corBotao);
     border: solid;
     border-color: var(--corBorda);
-    border-width: 2px;
+    border-width: 0.13rem;
     color: var(--corFonte);
     align-items: center;
 }
@@ -119,14 +119,14 @@ p {
 
 #main__saida {
     background-color: var(--corbloco);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     text-align: center;
-    backdrop-filter: blur(10px);
-    height: 600px;
+    backdrop-filter: blur(0.63rem);
+    height: 37.5rem;
     align-items: center;
     border: solid;
     border-width: 1px;
-    padding: 14px 0px;
+    padding: 0.88rem 0rem;
     align-content: center;
 }
 
@@ -142,8 +142,8 @@ p {
 }
 
 #main__saida__texto  {
-    padding: 250px 90px;
-    border-radius: 32px;
+    padding: 15.63rem 5.63rem;
+    border-radius: 2rem;
     resize: none;
     background-color: var(--corSaida);
     border: none;
@@ -156,11 +156,11 @@ p {
 
 #main__saida__copiar {
     padding: 6% 30%;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     border: solid;
     color: var(--corFonte);
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
+    font-size: 1.13rem;
     border-color: var(--corBorda);
     background-color: var(--corBotao);
     border-width: 2px;
@@ -168,20 +168,16 @@ p {
     text-align: center;
 }
 
-#main__saida__imagem {
-    height: 240px;
-    width: 100%;
-}
 
 h1 {
     color: var(--corFonte);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 #main__saida__paragrafo {
     font-family: "Roboto", sans-serif;
     color: var(--corFonte);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 #rodape {
@@ -213,12 +209,12 @@ h1 {
     }
 
     #main__entrada__texto {
-        padding: 50px;
+        padding: 3.13rem;
         width: 100%;
         height: 30vh;
         border: solid;
         border-color: var(--corBorda);
-        border-radius: 24px;
+        border-radius: 1.5rem;
         border-width: 1px;
     }
 
@@ -229,12 +225,12 @@ h1 {
 
     #main__entrada__botoes__criptografar {
         width: auto;
-        padding: 10% 30px;
+        padding: 10%;
     }
 
     #main__entrada__botoes__descriptografar {
         width: auto;
-        padding: 10% 30px;
+        padding: 10%;
         font-size: auto;
     }
 
@@ -248,13 +244,14 @@ h1 {
     }
 
     #main__saida__tela {
-        height: 30vh;
+        height: 1rem;
+
     }
 
     #main__saida__texto {   
         width: 100%;
         align-items: center;
-        padding: 60px 40px;
+        padding: 3.75rem 2.5rem;
         height: auto;
     }
 
