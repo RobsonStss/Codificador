@@ -29,24 +29,27 @@ body {
 
 #main {
     display: flex;
+    padding: 50%;
     flex-direction: row;
     justify-content: space-around;
     gap: 2.5rem;
     padding: 5rem 2.5rem;
-    margin: auto;
+    margin: auto;   
 }
 
 #main__entrada {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
     outline: 0;
-    justify-content: center;
     background-color: var(--corbloco);
     border-radius: 1.5rem;
     backdrop-filter: blur(0.31rem);
-    border-color: white;
+    border-color: var(--corBorda);
     height: 37.5rem;
     border: solid;
-    border-width: 1px;
+    border-width: 1px; 
+    gap: 4.38rem 0rem;
 }
 
 
@@ -56,9 +59,11 @@ body {
 }
 
 #main__entrada__texto {
+    width: 100%;
+    height: 300px;
     outline: none;
     border: none;
-    padding: 13.13rem;
+    padding: 9.69rem;
     background-color: var(--corbloco);
     color: var(--corFonte);
     resize: none;
@@ -205,6 +210,7 @@ h1 {
         width: 100%;
         height: 10%;
         border: none;
+        gap: 10px;
     }
 
     #main__entrada__texto {
@@ -249,7 +255,6 @@ h1 {
     }
 
     #main__saida__texto {   
-        /*width: 100%; */
         align-items: center;
         padding: 3.75rem 2.5rem;
         height: auto;
