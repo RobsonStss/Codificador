@@ -95,6 +95,8 @@ p {
     color: var(--corFonte);
     background-color: var(--corBotao);
     border-color: var(--corBorda);
+    align-items: center;
+    border-width: 1.5px;
 }
 
 #main__entrada__botoes__descriptografar {
@@ -107,6 +109,7 @@ p {
     border-color: var(--corBorda);
     color: var(--corFonte);
     align-items: center;
+    border-width: 1.5px;
 }
 
 #main__entrada__botoes__criptografar:hover {
