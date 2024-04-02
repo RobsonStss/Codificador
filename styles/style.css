@@ -105,7 +105,6 @@ p {
     background-color: var(--corBotao);
     border: solid;
     border-color: var(--corBorda);
-    border-width: 0.13rem;
     color: var(--corFonte);
     align-items: center;
 }
