@@ -258,4 +258,16 @@ h1 {
     #main__saida__copiar {
         padding: 5% 20%;
     }
+
+    #main__entrada__botoes__criptografar:hover {
+        transition: none;
+        transform: none;
+        opacity: none;
+    }
+
+    #main__entrada__botoes__descriptografar:hover {
+        transition: none;
+        transform: none;
+        opacity: none;
+    }
 }
