@@ -23,7 +23,7 @@ body {
     font-style: normal;
     color: var(--corFonte);
     background-color: black;
-    background-image: url(../assets/anonimous.jpg);
+    background-image: url(../assets/imagemFundo.jpg);
 
 }
 
@@ -44,7 +44,7 @@ body {
     outline: 0;
     background-color: var(--corbloco);
     border-radius: 1.5rem;
-    backdrop-filter: blur(0.61rem);
+
     border-color: var(--corBorda);
     height: 37.5rem;
     border: solid;
@@ -128,7 +128,6 @@ p {
     background-color: var(--corbloco);
     border-radius: 1.5rem;
     text-align: center;
-    backdrop-filter: blur(0.63rem);
     height: 37.5rem;
     align-items: center;
     border: solid;
@@ -198,7 +197,9 @@ h1 {
 @media screen and (max-width: 728px){
     body {
         background-color: black;
-        background-image: none;
+        background-image: url("../assets/telaPequena.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     #main {
         display: flex;
@@ -213,6 +214,7 @@ h1 {
         height: 10%;
         border: none;
         gap: 10px;
+        backdrop-filter: blur(0px);
     }
 
     #main__entrada__texto {
@@ -223,6 +225,7 @@ h1 {
         border-color: var(--corBorda);
         border-radius: 1.5rem;
         border-width: 1px;
+        
     }
 
     #main__entrada__botoes {
