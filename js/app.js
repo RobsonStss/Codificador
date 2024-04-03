@@ -4,27 +4,35 @@ var resultadoCriptgrafado;
 var resultadoDescriptografado;
 
 function criptografar() {
-    var texto = textoInput.value;
-    resultadoCriptgrafado = texto.replace("e", "enter").replace("i", "imes").replace("a", "ai").replace("o", "ober").replace("u", "ufat");
+    if (textoInput.value == "") {
+        alert("Digite um texto");
+    }else {
+        var texto = textoInput.value;
+        resultadoCriptgrafado = texto.replace("e", "enter").replace("i", "imes").replace("a", "ai").replace("o", "ober").replace("u", "ufat");
+    
+        document.getElementById('main__saida__texto').value = resultadoCriptgrafado;
+        // Faz com que desapareca os textos padrão e mostre o texto criptografado
+        document.getElementById("main__saida__container").style.display = "none";
+        document.getElementById("main__saida__texto").style.display = "block";
+        document.getElementById("main__saida__copiar").style.display = "block";
+        document.getElementById("main__entrada__texto").value = "";  
+    }
 
-
-    document.getElementById('main__saida__texto').value = resultadoCriptgrafado;
-    // Faz com que desapareca os textos padrão e mostre o texto criptografado
-    document.getElementById("main__saida__container").style.display = "none";
-    document.getElementById("main__saida__texto").style.display = "block";
-    document.getElementById("main__saida__copiar").style.display = "block";
-    document.getElementById("main__entrada__texto").value = "";
 }
 
 
 function descriptografar() {
-    var texto = textoInput.value;
-    resultadoDescriptografado = texto.replace("enter", "e").replace("imes", "i").replace("ai", "a").replace("ober", "o").replace("ufat", "u");
+    if (textoInput.value == "") {
+        alert("Digite um texto");
+    }else {
+        var texto = textoInput.value;
+        resultadoDescriptografado = texto.replace("enter", "e").replace("imes", "i").replace("ai", "a").replace("ober", "o").replace("ufat", "u");
 
-    document.getElementById('main__saida__texto').value = resultadoDescriptografado;
+        document.getElementById('main__saida__texto').value = resultadoDescriptografado;
 
-    document.getElementById("main__saida__texto").style.backgroundImage = "none";
-    document.getElementById("main__entrada__texto").value = "";
+        document.getElementById("main__saida__texto").style.backgroundImage = "none";
+        document.getElementById("main__entrada__texto").value = "";
+    }
 }
 
 function copiar() {
